@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dat-lession-5/precache-manifest.ea9dc8317f6eafed14fa6102bea574e3.js"
+  "/dat-lession-5/precache-manifest.fd67a8c93b4acf78155f045d77254659.js"
 );
 
 workbox.clientsClaim();
