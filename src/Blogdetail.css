@@ -44552,7 +44552,7 @@ input[type="submit"]:hover {
     border-bottom: 2px solid #2eca7f
 }
 
-#page>footer {
+body>footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -44560,7 +44560,7 @@ input[type="submit"]:hover {
     z-index: 0
 }
 
-#page>footer .copyrights {
+body>footer .copyrights {
     display: block;
     margin-bottom: 12px;
     text-align: center;
@@ -44807,7 +44807,7 @@ td {
     position: relative;
     width: 100%;
     margin: 0 auto;
-  
+    padding-top: 100px;
     -webkit-perspective: 1500px;
     -moz-perspective: 1500px;
     perspective: 1500px;
@@ -48478,7 +48478,9 @@ a.post-thumbnail:hover {
     .site-title-block .site-description {
         display: none
     }
-   
+    .subpages {
+        padding-top: 15px
+    }
     .single-page-content {
         padding: 15px 15px 0 15px
     }

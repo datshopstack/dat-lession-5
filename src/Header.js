@@ -1,43 +1,78 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './main-menu.css';
+
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {homeActive:true,blogActive:false,contactActive:false}
+  }
+  toggle(dt) {
+  	if(dt == "home"){
+  		this.setState({homeActive:true,blogActive:false,contactActive:false});
+  	}else if(dt == "blog"){
+        this.setState({homeActive:false,blogActive:true,contactActive:false}); 
+  	}else{
+  		this.setState({homeActive:false,blogActive:false,contactActive:true}); 
+  	}
+    
+  }	
   render() {
+  	let homeClass = [];
+  	let blogClass = [];
+  	let contactClass = [];
+  	if(this.state.homeActive){
+  		homeClass.push('active');
+  	}
+  	if(this.state.blogActive){
+  		blogClass.push('active');
+  	}
+  	if(this.state.contactActive){
+  		contactClass.push('active');
+  	}
     return (
-      <header id="header" className="horizontal-w  sm-rgt-mn  w-header-type-10">
-			<div className="container">
-			<div className="col-md-3 col-sm-3 logo-wrap">
-				<div className="logo">
-					<a href="http://www.shopstack.asia:80/">
-					<img src="http://www.shopstack.asia:80/wp-content/uploads/2019/01/shopstack-logo-email.png" width="210" id="img-logo-w1" alt="Shopstack Asia" className="img-logo-w1"  />
-					</a>
-					<a href="http://www.shopstack.asia:80/">
-					<img src="http://www.shopstack.asia:80/wp-content/uploads/2019/01/shopstack-logo-email.png" width="280" id="img-logo-w2" alt="Shopstack Asia" className="img-logo-w2"  />
-					</a>
-					<span className="logo-sticky">
-					  <a href="http://www.shopstack.asia:80/">
-					 <img src="http://www.shopstack.asia:80/wp-content/uploads/2019/01/shopstack-logo-email.png" width="60" id="img-logo-w3" alt="Shopstack Asia" className="img-logo-w3" />
-					 </a>
-					 </span>
-				 </div>
-			 </div>
-			<nav id="nav-wrap" className="nav-wrap1 col-md-9 col-sm-9"><div id="menu-icon"><i className="fa-navicon"></i> <span>Menu - </span><span className="mn-clk">Navigation</span><span className="mn-ext1"></span><span className="mn-ext2"></span><span className="mn-ext3"></span></div><div id="menu-icon"><i className="fa-navicon"></i> <span>Menu - </span><span className="mn-clk">Navigation</span><span className="mn-ext1"></span><span className="mn-ext2"></span><span className="mn-ext3"></span></div>
-				<div className="container">
-							<div id="search-form">
-					<a href="javascript:void(0)" className="search-form-icon"><i id="searchbox-icon" className="fa-search"></i></a>
-				<div id="search-form-box" className="search-form-box">
-						<form action="http://www.shopstack.asia:80/" method="get">
-							<input type="text" className="search-text-box" id="search-box" name="s" />
-						</form>
-						</div>
-					</div>
-					<ul id="nav"><li id="menu-item-9557" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-9557"><a href="http://www.shopstack.asia" data-description="start here">Home</a></li>
-			<li id="menu-item-9597" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9597"><a href="http://www.shopstack.asia:80/index.php/about-us/" data-description="About Us">Company</a></li>
-			<li id="menu-item-9596" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9596"><a href="http://www.shopstack.asia:80/index.php/portfolio-shopstack/" data-description="">Portfolio</a></li>
-			<li id="menu-item-9592" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9592"><a href="http://www.shopstack.asia:80/index.php/contact-us/" data-description="connect now">Contact</a></li>
-			</ul>	</div>
-			</nav>
-			</div>
+      	 
+      <header id="site_header" className="header mobile-menu-hide">
+      
+		<div className="header-content clearfix">
+			    <div className="site-title-block mobile-hidden">
+			      <a href="#">
+			        <h1 className="site-title">
+			          Dat<span> Hoang</span>
+			        </h1>
+			      </a>
+			    </div>
+			    {/* Navigation */}
+			    <div className="site-nav">
+			      {/* Main menu */}
+			      <ul id="nav" className="site-main-menu site-auto-menu">
+			        <li onClick={this.toggle.bind(this,"home")} className={homeClass.join('')}>
+			        <Link to="/">Home</Link>
+			          
+			        </li>
+			        <li onClick={this.toggle.bind(this,"blog")} className={blogClass.join('')}>
+			          <Link to="/blog">Blog</Link>
+			        </li>
+			        <li onClick={this.toggle.bind(this,"contact")} className={contactClass.join('')}>
+			        <Link to="/contact">Contact</Link>
+			         
+			        </li>
+			        <li>
+			          <a href="#portfolio" className="pt-trigger">
+			            Portfolio
+			          </a>
+			        </li>
+			      </ul>
+			      {/* /Main menu */}
+			    </div>
+            {/* Navigation */}
+            
+        </div>
+        
       </header>
+     
+      
     );
   }
 }
