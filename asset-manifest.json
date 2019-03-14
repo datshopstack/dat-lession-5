@@ -1,14 +1,14 @@
 {
-  "main.css": "/dat-lession-5/static/css/main.d439f7c3.chunk.css",
-  "main.js": "/dat-lession-5/static/js/main.13e7e3c3.chunk.js",
-  "main.js.map": "/dat-lession-5/static/js/main.13e7e3c3.chunk.js.map",
-  "runtime~main.js": "/dat-lession-5/static/js/runtime~main.398b8fa6.js",
-  "runtime~main.js.map": "/dat-lession-5/static/js/runtime~main.398b8fa6.js.map",
-  "static/js/2.06fade93.chunk.js": "/dat-lession-5/static/js/2.06fade93.chunk.js",
-  "static/js/2.06fade93.chunk.js.map": "/dat-lession-5/static/js/2.06fade93.chunk.js.map",
-  "index.html": "/dat-lession-5/index.html",
-  "precache-manifest.fd67a8c93b4acf78155f045d77254659.js": "/dat-lession-5/precache-manifest.fd67a8c93b4acf78155f045d77254659.js",
-  "service-worker.js": "/dat-lession-5/service-worker.js",
-  "static/css/main.d439f7c3.chunk.css.map": "/dat-lession-5/static/css/main.d439f7c3.chunk.css.map",
-  "static/media/logo.svg": "/dat-lession-5/static/media/logo.5d5d9eef.svg"
+  "main.css": "/home/static/css/main.d439f7c3.chunk.css",
+  "main.js": "/home/static/js/main.1de481af.chunk.js",
+  "main.js.map": "/home/static/js/main.1de481af.chunk.js.map",
+  "runtime~main.js": "/home/static/js/runtime~main.5fdf7f86.js",
+  "runtime~main.js.map": "/home/static/js/runtime~main.5fdf7f86.js.map",
+  "static/js/2.06fade93.chunk.js": "/home/static/js/2.06fade93.chunk.js",
+  "static/js/2.06fade93.chunk.js.map": "/home/static/js/2.06fade93.chunk.js.map",
+  "index.html": "/home/index.html",
+  "precache-manifest.ffc58e10531050bd89a622140e6b1779.js": "/home/precache-manifest.ffc58e10531050bd89a622140e6b1779.js",
+  "service-worker.js": "/home/service-worker.js",
+  "static/css/main.d439f7c3.chunk.css.map": "/home/static/css/main.d439f7c3.chunk.css.map",
+  "static/media/logo.svg": "/home/static/media/logo.5d5d9eef.svg"
 }
